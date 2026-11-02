@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demos · Atlas Kinetix</title>
+    <meta name="robots" content="noindex" />
+    <!-- demo.atlas-lac.com is the old address of the demos. Each old path goes to its new home. -->
+    <script>
+      var routes = {
+        'encuentra-tu-auto': 'https://find-my-car-demo.atlas-lac.com/',
+        'mappedin-find-my-car': 'https://find-my-car-demo.atlas-lac.com/',
+        'rutas-tematicas': 'https://theme-trails-demo.atlas-lac.com/',
+        'mappedin-rutas-tematicas': 'https://theme-trails-demo.atlas-lac.com/',
+        'mappedin-theme-trails': 'https://theme-trails-demo.atlas-lac.com/'
+      };
+      var first = location.pathname.split('/').filter(Boolean)[0] || '';
+      location.replace((routes[first] || 'https://demos.atlas-lac.com/') + location.search + location.hash);
+    </script>
+    <style>
+      body { margin: 0; font: 16px/1.5 system-ui, sans-serif; background: #ffffff; color: #07294e; display: grid; place-items: center; min-height: 100vh; padding: 16px; box-sizing: border-box; }
+      a { color: #07294e; }
+    </style>
+  </head>
+  <body>
+    <p>Las demos se mudaron a <a href="https://demos.atlas-lac.com/">demos.atlas-lac.com</a>.</p>
+  </body>
+</html>
